@@ -101,6 +101,7 @@ public class MYSQLImportExport {
         YifanHuLayout layout = new YifanHuLayout(null, new StepDisplacement(1f));
         layout.setGraphModel(graphModel);
         layout.resetPropertiesValues();
+        layout.initAlgo();
         for (int i = 0; i < 100 && layout.canAlgo(); i++) {
             layout.goAlgo();
         }

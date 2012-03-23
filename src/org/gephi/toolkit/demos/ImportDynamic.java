@@ -27,7 +27,6 @@ import org.gephi.data.attributes.api.AttributeModel;
 import org.gephi.data.attributes.api.Estimator;
 import org.gephi.data.attributes.type.DynamicInteger;
 import org.gephi.data.attributes.type.Interval;
-import org.gephi.dynamic.api.DynamicController;
 import org.gephi.filters.api.FilterController;
 import org.gephi.filters.api.Query;
 import org.gephi.filters.api.Range;
@@ -35,11 +34,7 @@ import org.gephi.filters.plugin.attribute.AttributeRangeBuilder;
 import org.gephi.filters.plugin.dynamic.DynamicRangeBuilder;
 import org.gephi.filters.plugin.dynamic.DynamicRangeBuilder.DynamicRangeFilter;
 import org.gephi.filters.spi.FilterBuilder;
-import org.gephi.graph.api.Graph;
-import org.gephi.graph.api.GraphController;
-import org.gephi.graph.api.GraphModel;
-import org.gephi.graph.api.GraphView;
-import org.gephi.graph.api.Node;
+import org.gephi.graph.api.*;
 import org.gephi.io.importer.api.Container;
 import org.gephi.io.importer.api.ImportController;
 import org.gephi.io.processor.plugin.DynamicProcessor;
@@ -172,7 +167,7 @@ public class ImportDynamic {
         //Create a attribute range filter query - on the price column
         AttributeModel attributeModel = Lookup.getDefault().lookup(AttributeController.class).getModel();
         AttributeColumn priceCol = attributeModel.getNodeTable().getColumn("price");
-        AttributeRangeBuilder.NodeAttributeRangeFilter attributeRangeFilter = new AttributeRangeBuilder.NodeAttributeRangeFilter(priceCol);
+        AttributeRangeBuilder.AttributeRangeFilter attributeRangeFilter = new AttributeRangeBuilder.AttributeRangeFilter(priceCol);
         Query priceQuery = filterController.createQuery(attributeRangeFilter);
 
         //Set dynamic query as child of price query

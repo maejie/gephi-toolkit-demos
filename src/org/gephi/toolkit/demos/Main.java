@@ -24,7 +24,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*HeadlessSimple headlessSimple = new HeadlessSimple();
+        HeadlessSimple headlessSimple = new HeadlessSimple();
         headlessSimple.script();
         
         WithAutoLayout autoLayout = new WithAutoLayout();
@@ -45,8 +45,8 @@ public class Main {
         ImportExport importExport = new ImportExport();
         importExport.script();
 
-        MYSQLImportExport mYSQLImportExport = new MYSQLImportExport();
-        mYSQLImportExport.script();
+//        MYSQLImportExport mYSQLImportExport = new MYSQLImportExport();
+//        mYSQLImportExport.script();
 
         ManualGraph manualGraph = new ManualGraph();
         manualGraph.script();
@@ -58,6 +58,6 @@ public class Main {
         longitudinalGraph.script();
 
         ImportDynamic importDynamic = new ImportDynamic();
-        importDynamic.script();*/
+        importDynamic.script();
     }
 }

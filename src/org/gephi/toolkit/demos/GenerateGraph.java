@@ -20,8 +20,8 @@ along with Gephi.  If not, see <http://www.gnu.org/licenses/>.
  */
 package org.gephi.toolkit.demos;
 
-import org.gephi.io.generator.plugin.RandomGraph;
 import org.gephi.io.generator.plugin.DynamicGraph;
+import org.gephi.io.generator.plugin.RandomGraph;
 import org.gephi.io.importer.api.Container;
 import org.gephi.io.importer.api.ContainerFactory;
 import org.gephi.io.importer.api.ImportController;

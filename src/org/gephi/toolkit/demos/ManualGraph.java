@@ -21,12 +21,7 @@ along with Gephi.  If not, see <http://www.gnu.org/licenses/>.
 
 package org.gephi.toolkit.demos;
 
-import org.gephi.graph.api.DirectedGraph;
-import org.gephi.graph.api.Edge;
-import org.gephi.graph.api.GraphController;
-import org.gephi.graph.api.GraphModel;
-import org.gephi.graph.api.Node;
-import org.gephi.graph.api.UndirectedGraph;
+import org.gephi.graph.api.*;
 import org.gephi.project.api.ProjectController;
 import org.gephi.project.api.Workspace;
 import org.openide.util.Lookup;

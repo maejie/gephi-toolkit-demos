@@ -128,6 +128,7 @@ public class HeadlessSimple {
         layout.resetPropertiesValues();
         layout.setOptimalDistance(200f);
 
+        layout.initAlgo();
         for (int i = 0; i < 100 && layout.canAlgo(); i++) {
             layout.goAlgo();
         }

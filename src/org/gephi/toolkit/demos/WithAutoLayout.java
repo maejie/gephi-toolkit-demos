@@ -94,7 +94,6 @@ public class WithAutoLayout {
             ec.exportFile(new File("autolayout.pdf"));
         } catch (IOException ex) {
             ex.printStackTrace();
-            return;
         }
     }
 }
