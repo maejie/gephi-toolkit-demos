@@ -132,6 +132,7 @@ public class HeadlessSimple {
         for (int i = 0; i < 100 && layout.canAlgo(); i++) {
             layout.goAlgo();
         }
+        layout.endAlgo();
 
         //Get Centrality
         GraphDistance distance = new GraphDistance();

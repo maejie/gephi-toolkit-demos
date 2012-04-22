@@ -105,6 +105,7 @@ public class MYSQLImportExport {
         for (int i = 0; i < 100 && layout.canAlgo(); i++) {
             layout.goAlgo();
         }
+        layout.endAlgo();
 
         //Export X, Y position to the DB
         //Connect database
