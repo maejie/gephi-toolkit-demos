@@ -1,1 +1,1 @@
-Gephi Toolkit from 0.8.1 beta commit d8c7ae54e0555a95ad7154ce6937d738a1b46158
+Gephi Toolkit from 0.8.2 beta commit 77e79bafb7269e8a44c0d65a72bc52c87880a0ae
